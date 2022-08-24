@@ -1,10 +1,38 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function reverse(word) {
+  // to get 'abc' to turn into 'cba' (reverse implementation)
+const wordArray = word.split('')
+const reversedWordArray = wordArray.reverse()
+const reversedWord = reversedWordArray.join('')
+return reversedWord
+
 }
+
+function isPalindrome(word) {
+
+  // Write your algorithm here
+  // reverse the input string 
+  const reversedWord = reverse(word)
+
+  // if the input is the same as the reversed input
+
+  if (word === reversedWord) {
+    return true
+  } else {
+    return false 
+  }
+}
+  //  return true
+  //  else
+  //  return false 
+
+
 
 /* 
   Add your pseudocode here
-*/
+  if the word is the same in reverse it should return true
+   
+
+   
 
 /*
   Add written explanation of your solution here
